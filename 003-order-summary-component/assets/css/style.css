@@ -216,7 +216,7 @@ body {
     background-color: var(--color-hover);
 }
 
-.buy-order-button label, .cancel-order-container p{
+.button-label, .cancel-order-container p{
     text-align: center;
     font-weight: var(--font-weight-extrabold);
     font-size: 1rem;
