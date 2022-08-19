@@ -114,12 +114,14 @@ p {
 	margin-bottom: 1rem;
 }
 
-.nft-details h3 {
+.nft-details h4 {
 	color: var(--color-white);
 	margin-bottom: 1rem;
+	font-weight: 600;
+	font-size: 1.17rem;
 }
 
-.nft-details h3:hover {
+.nft-details h4:hover {
 	color: var(--color-cyan);
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
@@ -212,4 +214,12 @@ p {
 .attribution a { 
     color: var(--color-cyan);
     text-decoration: none;
+}
+
+.screenreader {
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
 }

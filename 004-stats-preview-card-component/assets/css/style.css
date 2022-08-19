@@ -58,6 +58,7 @@ body {
 }
 
 .image-header {
+	border: none;
 	background-image: url('../img/image-header-mobile.jpg');
 	background-size: cover;
 	opacity: 0.4;
@@ -112,7 +113,7 @@ body {
 	}
 }
 
-.stats-preview-card-text h3 {
+.stats-preview-card-text h4 {
 	font-size: 1.75rem;
 	font-weight: 700;
 	font-family: 'Inter', sans-serif;
@@ -120,7 +121,7 @@ body {
 }
 
 @media (min-width: 1440px) {
-	.stats-preview-card-text h3 {
+	.stats-preview-card-text h4 {
 		font-size: 2.4rem;
 	}
 }
@@ -170,14 +171,14 @@ body {
 	}
 }
 
-.stats h3 {
+.stats h4 {
 	font-weight: 700;
 	font-size: 1.5rem;
 	font-family: 'Inter', sans-serif;
 }
 
 @media (min-width: 1440px) {
-	.stats h3 {
+	.stats h4 {
 		font-size: 1.75rem;
 	}
 }
@@ -199,4 +200,12 @@ body {
 
 .attribution a { 
     color: hsl(228, 45%, 44%); 
+}
+
+.screenreader {
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
 }
