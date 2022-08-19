@@ -25,7 +25,7 @@
     object-fit: cover;
 }
 
-body {
+main {
     background-color: var(--color-pale-blue); 
     padding: 2vh;
     display: flex;
@@ -92,14 +92,14 @@ body {
     }
 }
 
-.order-summary-text h3 {
+.order-summary-text h2 {
     font-weight: var(--font-weight-extrabold);
     font-size: 1.35rem;
     color: var(--color-dark-blue);
 }
 
 @media (min-width: 1440px) {
-    .order-summary-text h3 {
+    .order-summary-text h2 {
         margin-top: 0.5rem;
         margin-bottom: 0.9rem;
         font-size: 1.75rem;
@@ -147,12 +147,12 @@ body {
     justify-content: center;
 }
 
-.order-plan-type h4, .order-plan-type p, .order-change a {
+.order-plan-type h3, .order-plan-type p, .order-change a {
     font-size: 0.8rem;
 }
 
 @media (min-width: 1440px) {
-    .order-plan-type h4, .order-plan-type p  {
+    .order-plan-type h3, .order-plan-type p  {
         font-size: 1rem;
     }
 

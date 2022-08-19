@@ -28,7 +28,7 @@ a {
 	text-decoration: none;
 }
 
-body {
+main {
     background-color: var(--color-main-blue); 
     padding: 2vh;
     display: flex;
@@ -114,14 +114,14 @@ p {
 	margin-bottom: 1rem;
 }
 
-.nft-details h4 {
+.nft-details h3 {
 	color: var(--color-white);
 	margin-bottom: 1rem;
 	font-weight: 600;
 	font-size: 1.17rem;
 }
 
-.nft-details h4:hover {
+.nft-details h3:hover {
 	color: var(--color-cyan);
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
