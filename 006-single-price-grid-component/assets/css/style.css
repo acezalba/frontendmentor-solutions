@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+
+:root {
+	font-size: 16px;
+	font-family: 'Karla', sans-serif;
+	--color-cyan:  hsl(179, 62%, 43%);
+	--color-bright-yellow:  hsl(71, 73%, 54%);
+	--color-light-grey:  hsl(204, 43%, 93%);
+	--color-greyish-blue:  hsl(218, 22%, 67%);
+}
+
+* {
+    margin:  0;
+    padding:  0;
+}
+
+:where(*) img {
+    width: 100%;
+   	height: 100%;
+    object-fit: contain;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+    background-color: #E3EEF4; 
+    padding: 2vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.price-and-feature-card {
+	max-width: 320px;
+	margin: 2rem auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+
+@media (min-width: 1440px) {
+	.price-and-feature-card {
+		max-width: 640px;
+	}
+}
+
+.panel {
+	max-height: 320px;
+	padding:  1.6rem;
+}
+
+@media (min-width: 1440px) {
+	.panel {
+		padding: 2.3rem;
+	}
+}
+
+.panel > * {
+	margin-bottom: 1rem;
+}
+
+.marketing-card {
+	background-color: white;
+	color: var(--color-greyish-blue);
+}
+
+.marketing-card h3 {
+	font-weight: 700;
+	color: var(--color-cyan);
+}
+
+.marketing-card .card-subtitle {
+	font-weight: 700;
+	font-size: 1rem;
+}
+
+.marketing-card .card-text {
+	font-size: 0.85rem;
+	line-height: 1.75em;
+	margin-bottom: 0;
+}
+
+.marketing-card .card-subtitle {
+	font-size: 700;
+	color: var(--color-bright-yellow);
+}
+
+@media (min-width: 1440px) {
+	.marketing-card h3 {
+		font-size: 1.5rem;
+	}
+
+	.marketing-card .card-subtitle {
+		font-size: 1.1rem;
+		margin-bottom: 0.5rem;
+	}
+
+	.marketing-card .card-text {
+		font-size: 1rem;
+	}
+}
+
+
+.price-card, .feature-card {
+	background-color: var(--color-cyan);
+	color: var(--color-light-grey);
+}
+
+@media (min-width: 1440px) {
+	.price-card, .feature-card {
+		min-width: 320px;
+	}
+
+	.price-and-feature-card-body {
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.price-card {
+	display: flex;
+	flex-direction: column;
+}
+
+.price-card h4 {
+	display: flex;
+	align-items: center;
+}
+
+@media (min-width: 1440px) {
+	.price-card h3 {
+		margin-bottom: 0.5rem;
+	}
+}
+
+.price-card .price {
+	font-size: 2rem;
+	margin-right: 1rem;
+}
+
+.price-card .duration {
+	font-weight: 300;
+	font-size: 1rem;
+}
+
+.price-card-text {
+	margin-bottom: 2rem;
+}
+
+.price-card button {
+	color: var(--color-light-grey);
+	background-color: var(--color-bright-yellow);
+	width: 100%;
+	height: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-bottom: 0;
+	font-weight: 700;
+	font-family: "Karla", sans-serif;
+	font-size: 1rem;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	align-self: flex-end;
+}
+
+.price-card button:hover {
+	background-color: hsl(91, 73%, 54%);
+	font-weight: 400;
+}
+
+.feature-card {
+	list-style-position: inside;
+	background-color: hsl(179, 47%, 52%);
+}
+
+.feature-card li {
+	list-style: none;
+	font-size: 0.9rem;
+	font-weight: 300;
+}
+
+.feature-card ul {
+	margin-bottom: 0;
+}
+
+.attribution { 
+	margin-top: 2rem;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.attribution p {
+    font-size: 12px;
+}
+
+.attribution a { 
+/*    color: var(--color-cyan);*/
+    text-decoration: none;
+}
+
+.screenreader {
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
