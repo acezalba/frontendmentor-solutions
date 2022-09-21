@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root {
+    font-family: "Libre Franklin", sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+    --color-blue: hsl(223, 87%, 63%);
+    --color-pale-blue: hsl(223, 100%, 88%);
+    --color-light-red: hsl(354, 100%, 66%);
+    --color-gray: hsl(0, 0%, 59%);
+    --color-very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+    margin:  0;
+    padding:  0;
+}
+
+:where(*) img {
+    width: 100%;
+   	height: 100%;
+    object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    max-width: 32rem;
+}
+
+header, footer, .header-text, .coming-soon-image, form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header, .coming-soon-image {
+    margin-bottom: 4.5rem;
+}
+
+.header-text, header form, form > * {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header-text img {
+    height: 1.6rem;
+    width: 5.3rem;
+    margin-bottom: 4.5rem;
+}
+
+@media (min-width: 1080px) {
+    .header-text img {
+        height: 1.5rem;
+        width: 5.3rem;
+        margin-bottom: 4.5rem;
+    }
+}
+
+
+.header-text h1 {
+    font-size: 2.15rem;
+    color: var(--color-gray);
+    font-weight: 300;
+    margin-bottom: 2.2rem;
+}
+
+@media (min-width: 1080px) {
+    .header-text h1 {
+        font-size: 2.25rem;
+        margin-bottom: 0;
+    }
+}
+
+.header-text h1 strong {
+    color: black;
+    font-weight: 700;
+}
+
+.header-text p {
+    font-size: 1.15rem;
+    color: var(--color-very-dark-blue);
+    margin-bottom: 3.5rem;
+}
+
+@media (min-width: 1080px) {
+    .header-text p {
+        font-size: 1rem;
+    }
+}
+
+header form {
+    padding-top: inherit;
+    padding-bottom: inherit;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+header form button, .input input {
+    border-radius: 100px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-bottom: 1rem;
+    border: none;
+    height: 4rem;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 1.12rem;
+}
+
+@media (min-width:  1080px) {
+    header form {
+        padding: unset;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 120%;
+    }
+
+    .input {
+        margin-right: 1rem;
+    }
+
+    .input, .input input {
+        width: 21rem;
+    }
+
+    header form button, .input input {
+        height: 2.75rem;
+        font-size: 0.8rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.input input {
+    border: 2px solid var(--color-pale-blue);
+    color: var(--color-pale-blue);
+}
+
+.input input:focus {
+    outline: none;
+    border: none;
+    color: black;
+}
+
+.input .invalid {
+    display: none;
+    width:  100%;
+    font-style: italic;
+    color: var(--color-light-red);
+    margin: unset;
+}
+
+.input input[type="email"]:focus:invalid {
+    color: black;
+    border: 2px solid var(--color-light-red);
+}
+
+.input input[type="email"]:focus:invalid + .invalid {
+    display: flex;
+    color: var(--color-light-red);
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+
+}
+
+.input input[type="email"]:focus:valid {
+    color: var(--color-blue);
+    box-shadow: 0 0 0.8rem var(--color-blue);
+}
+
+@media (min-width:  1080px) {
+    .input input[type="email"]:focus:invalid + .invalid {
+        font-size: 0.7rem;
+        margin-top: -0.5rem;
+        justify-content: flex-start;
+        padding-left: 1rem;
+        text-align: left;
+    }
+}
+
+
+header form button {
+    background-color: var(--color-blue);
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 10px 20px var(--color-pale-blue);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.coming-soon-image {
+    margin-top: 0;
+    margin-bottom: 4.5rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    width: inherit;
+}
+
+@media (min-width:  1080px) {
+    .coming-soon-image {
+        margin-top: 0;
+        margin-bottom: 4.5rem;
+        margin-left: unset;
+        margin-right: unset;
+        width: inherit;
+    }
+}
+
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.socials a {
+    height: 3rem;
+    width: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 100px;
+    border: 2px solid hsla(223, 100%, 88%, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 1080px) {
+    .socials a {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+.socials i {
+    height: 100%;
+    width: 100%;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+}
+
+@media (min-width: 1080px) {
+    .socials i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.socials img {
+    filter: invert(84%) sepia(21%) saturate(20000%) hue-rotate(187deg) brightness(100%) contrast(94%);
+}
+
+@media (min-width: 1080px) {
+    .socials img {
+        height: 1rem;
+        width: 1rem;
+    }
+}
+
+.socials a:hover {
+    border: none;
+    background-color: var(--color-blue);
+}
+
+.socials a:hover img {
+    height: 80%;
+    width: 80%;
+    filter: invert(100%);
+}
+
+@media (min-width: 1080px) {
+    .socials a:hover img {
+        height: 105%;
+        width: 105%;
+        filter: invert(100%);
+    }
+}
+
+footer p {
+    color: var(--color-gray);
+}
+
+@media (min-width: 1080px) {
+    footer p {
+        font-size: 0.6rem;
+    }
+}
+
+.attribution { 
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.attribution p {
+    color: var(--color-gray);
+    font-size: 12px;
+}
+
+.attribution a { 
+    color: var(--color-blue);
+    text-decoration: none;
+}
+
+.screenreader {
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
