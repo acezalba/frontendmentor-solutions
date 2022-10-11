@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+	font-size: 62.5%;
+    --color-bright-orange:hsl(31, 77%, 52%);
+    --color-dark-cyan: hsl(184, 100%, 22%);
+    --color-very-dark-cyan: hsl(179, 100%, 13%);
+    --color-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --color-very-light-gray: hsl(0, 0%, 95%);
+}
+
+body {
+    animation: fadeInAnimation ease 0.3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+* {
+    margin:  0;
+    padding:  0;
+}
+
+:where(*) img {
+    width: 100%;
+   	height: 100%;
+    object-fit: contain;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p,a {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.three-column-card {
+    border-radius: 10px;
+    overflow: hidden;
+    min-width:  32.5rem;
+}
+
+@media (min-width: 1080px) {
+    .three-column-card {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.column {
+    min-height: 44rem;
+    color: var(--color-very-light-gray);
+    padding: 4.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+@media (min-width: 1080px) {
+    .column {
+        min-height: 50rem;
+        width: 30rem;
+        justify-content: start;
+    }
+}
+
+.column > *:not(:last-child) {
+    margin-bottom: 4rem;
+}
+
+.column :last-child {
+    margin-top: auto;
+}
+
+.column img {
+    height: 4rem;
+    width: 7rem;
+}
+
+.column h2 {
+    font-size: 3.3rem;
+}
+
+.column p {
+    font-size: 1.5rem;
+    line-height: 1.75em;
+    width: 23ch;
+}
+
+.column a {
+    height: 5rem;
+    font-size: 1.6rem;
+    border-radius: 100px;
+    border: 3px solid var(--color-very-light-gray);
+    background-color: var(--color-very-light-gray);
+    padding: 1rem 3rem;
+}
+
+.sedan {
+    background-color: var(--color-bright-orange);
+}
+
+.sedan a {
+    color: var(--color-bright-orange);
+}
+
+.sedan a:hover {
+    background-color: var(--color-bright-orange);
+    color: var(--color-very-light-gray);
+}
+
+.suv {
+    background-color: var(--color-dark-cyan);
+}
+
+.suv a {
+    color: var(--color-dark-cyan);
+}
+
+.suv a:hover {
+    background-color: var(--color-dark-cyan);
+    color: var(--color-very-light-gray);
+}
+
+.luxury {
+    background-color: var(--color-very-dark-cyan);
+}
+
+.luxury a {
+    color: var(--color-very-dark-cyan);
+}
+
+.luxury a:hover {
+    background-color: var(--color-very-dark-cyan);
+    color: var(--color-very-light-gray);
+}
+
+.attribution { 
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.attribution p {
+    font-size: 12px;
+}
+
+.attribution a { 
+    text-decoration: none;
+}
+
+.screenreader {
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
