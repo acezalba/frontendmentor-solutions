@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Browser Metas -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- SEO Metas -->
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Ace Z. Alba" />
+	<meta name="copyright" content="FrontendMentor.io" />
+	<meta name="description" content="A submission to a FrontendMentor challenge" />
+	<meta name="keywords" content="frontendmentor,challenge,css,html"/>
+
+	<title>Frontend Mentor | Interactive Card Details Form</title>
+	<link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+
+<!-- 	<link rel="stylesheet" href="https://unpkg.com/sanitize.css" /> -->
+    <link rel="stylesheet" href="./assets/css/sanitize.css" /> 
+	<link rel="stylesheet" href="./assets/css/style.css" /> 
+
+
+    <script src="assets/js/main.js" type="module"></script>
+
+</head>
+<body>
+
+<main>
+
+    <article class="card">
+        <h1 class="screenreader">Fill up this credit card form.</h1>
+
+        <header>
+        <div class="credit-card-container">
+            <div class="image-card back">
+                <p class="image-card-cvc">000</p>
+            </div>
+
+            <div class="image-card front">
+                <img src="./assets/img/card-logo.svg" alt="" class="image-card-icon">        
+                <p class="image-card-number">0000 0000 0000 0000</p>
+                <p class="image-card-name">Jane Appleseed</p>
+                <p class="image-card-date">
+                    <span class="image-card-month">00</span>/<span class="image-card-year">00</span>
+                </p>
+            </div>
+
+        </div>
+        </header>
+    
+        <section class="card-body">
+
+            <div id="credit-card-form">
+                <form action="#">
+                    <label for="card-name">Cardholder Name</label>
+                    <input 
+                        type="text" 
+                        placeholder="e.g. Jane Appleseed" 
+                        id="card-name"
+                        required >
+                    <div class="card-name invalid">Can't be blank.</div>
+                                    
+                    <label for="card-number">Card Number</label>
+                    <input 
+                        type="text" 
+                        placeholder="e.g. 1234 5678 9123 0000" 
+                        id="card-number"
+                        pattern="^[\d ]*$"
+                        maxlength="19" 
+                        required >
+                    <div class="card-number invalid">Can't be blank.</div>
+                    
+                    <label for="card-exp-date">Exp. Date (MM/YY)</label>
+                    <label for="exp-m" class="screenreader">Month</label>
+                    <input 
+                        type="month" 
+                        placeholder="MM" 
+                        id="exp-m"
+                        maxlength="2"
+                        pattern="^[\d ]*$"
+                        required >
+                    <div class="exp-m invalid">Can't be blank.</div>
+                    <label for="exp-y" class="screenreader">Year</label>
+                    <input 
+                        type="year" 
+                        placeholder="YY" 
+                        id="exp-y"
+                        maxlength="2"
+                        pattern="^[\d ]*$" 
+                        required >
+                    <div class="exp-y invalid">Can't be blank.</div>
+                                    
+                    <label for="card-cvc">CVC</label>
+                    <input 
+                        type="text" 
+                        placeholder="e.g. 123" 
+                        id="card-cvc"
+                        maxlength="3" 
+                        pattern="^[\d ]*$"
+                        required >
+                    <div class="card-cvc invalid">Can't be blank</div>
+
+                    <button id="credit-card-submit">Confirm</button>
+                </form>
+            </div>
+    
+        <!-- Completed state start -->
+    
+        <div id="thank-you" class="hidden">
+            <img src="./assets/img/icon-complete.svg" alt="Check Icon">
+
+            <h2>Thank you!</h2>
+            <p>We've added your card details</p>
+                
+            <a href="#">Continue</a>
+        </div>
+
+        <div class="attribution">
+            <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Ace Z. Alba</a>.</p>
+        </div>
+
+        </section>
+
+    </article>
+	
+
+</main>
+</body>
+</html>
