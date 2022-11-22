@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;500;700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Overpass', sans-serif;
+    --color-orange: hsl(25, 97%, 53%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-grey: hsl(217, 12%, 63%);
+    --color-medium-grey: hsl(216, 12%, 54%);
+    --color-dark-blue: hsl(213, 19%, 18%);
+    --color-very-dark-blue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin:  0;
+    padding:  0;
+}
+
+:where(*) img {
+    width: 100%;
+   	height: 100%;
+    object-fit: contain;
+}
+
+a {
+	text-decoration: none;
+}
+
+main {
+    padding: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--color-very-dark-blue);
+    color: var(--color-white);
+}
+
+.rating-card {
+    width: 32.5rem;
+    height: 36.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark-blue);
+    border-radius: 15px;
+}
+
+.rating-prompt {
+    width: 100%;
+    height: 100%;
+    padding: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.rating-card h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.rating-card p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-light-grey);
+    margin-bottom: 2rem;
+}
+
+.rating-card button {
+    background-color: var(--color-orange);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-family: "Overpass", sans-serif;
+    color: white;
+    margin-top: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.rating-card button:active,
+.rating-card button:hover,
+.rating-card button:focus {
+    background-color: var(--color-white);
+    color: var(--color-orange);
+}
+
+.rating-card form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rating-choice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.rating-choice .rating-radio-btn {
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--color-medium-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    opacity: 0.5;
+}
+
+.rating-radio-btn input {
+    appearance: none;
+}
+
+.rating-radio-btn label {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-white);
+}
+
+.rating-radio-btn:hover {
+    opacity: 1;
+    background-color: var(--color-orange);
+}
+
+.star-icon {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 100px;
+    background-color: hsla(216, 12%, 54%, 0.3);
+    padding: 1.3rem;
+}
+
+
+.thank-you-response {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.thank-you-response .user-rating {
+    border-radius: 20px;
+    background-color: rgb(52, 61, 73);
+    color: var(--color-orange);
+    padding-top: 0.5rem;
+    padding-bottom: 0rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.thank-you-response img {
+    width: 14.8rem;
+    height: 10rem;
+}
+
+.thank-you-response p {
+    font-size: 1.4rem;
+}
+
+.attribution { 
+    align-self: center;
+    justify-self: flex-end;
+    margin-top: 3rem;
+}
+
+.attribution p {
+    font-size: 12px;
+}
+
+.attribution a { 
+    text-decoration: none;
+    color: var(--color-orange);
+}
+
+.screenreader {
+    position: absolute !important; /* Outside the DOM flow */
+    height: 1px; width: 1px; /* Nearly collapsed */
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+    clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    opacity: 1 !important;
+}
