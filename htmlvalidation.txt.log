@@ -1,6 +1,0 @@
-INFO:html5validator.cli:Files to validate: 
-  015-interactive-card-details-form/index.html
-INFO:html5validator.cli:Number of files: 1
-DEBUG:html5validator.validator:['java', '-jar', '/home/ghost/.local/lib/python3.8/site-packages/vnujar/vnu.jar', '--check-css', '--stdout', '--asciiquotes', '015-interactive-card-details-form/index.html']
-DEBUG:html5validator.validator:[]
-INFO:html5validator.validator:All good.
