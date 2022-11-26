@@ -1,3 +1,7 @@
+package-lock.json
+package.json
+_config.yml
+node_modules
 template-dir/
 *.sublime-project
 *.sublime-workspace
