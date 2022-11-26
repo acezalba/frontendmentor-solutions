@@ -17,6 +17,7 @@ ratingFld.addEventListener('click', event => {
 
 form.addEventListener('submit', event => {
     processRating()
+    event.preventDefault()
     return false
 })
 
