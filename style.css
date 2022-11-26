@@ -60,6 +60,11 @@ header p {
 	color: #78909c;
 }
 
+ol {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
 ol li{
 	font-size: 1.75rem;
 	padding: 2.5rem 0;

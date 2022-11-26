@@ -27,7 +27,7 @@ body {
     background-color: var(--color-violet); 
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     body {
         background-image: url("../img/bg-desktop.svg");
         max-height: 100vh;
@@ -55,7 +55,7 @@ main {
     min-height: 100vh;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     main {
         display: grid;
         grid-template-columns: 3.2rem 1.2fr 1fr 3.2rem;
@@ -79,7 +79,7 @@ nav {
     padding: 3.5rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     h1 {
         font-size: 2.5rem;
     }
@@ -101,7 +101,7 @@ header {
     padding: 3.5rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     header {
         min-height: unset;
         grid-area: header;
@@ -118,7 +118,7 @@ article {
     padding: 3.5rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     article {
         grid-area: article;
         justify-content: center;
@@ -137,7 +137,7 @@ article p {
     font-size: 2rem;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     article > * {
         margin-bottom: 2rem;
     }
@@ -162,7 +162,7 @@ article button {
     outline: none;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     article button {
         width: 13vw;
         height: 3rem;
@@ -183,7 +183,7 @@ footer {
     align-items: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     footer {
         grid-area: footer;
         align-items: flex-end;    
@@ -199,20 +199,22 @@ footer {
     margin-bottom: 2rem;
 }
 
-.social-links img {
+.social-links a>img {
     height: 4rem;
     width: 4rem;
     border: 2px solid white;
     border-radius: 100%;
+    overflow: visible;
+    padding: 1rem;
     margin: 0 0.7rem;
 }
 
 .social-links img:hover {
+    filter: brightness(0) saturate(100%) invert(78%) sepia(58%) saturate(1945%) hue-rotate(238deg) brightness(93%) contrast(94%);
     border: 2px solid var(--color-soft-magenta);
-    transition: all 0.3s ease 0s;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     .social-links {
         margin-bottom: unset;
     }
@@ -230,7 +232,7 @@ footer {
     padding: 1rem 0;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     .attribution {
         border-top: none;
         padding: none;
