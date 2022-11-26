@@ -20,8 +20,6 @@
     object-fit: contain;
 }
 
-
-
 body {
     background-image: url("../img/bg-pattern-top.svg"), 
                       url("../img/bg-pattern-bottom.svg");
