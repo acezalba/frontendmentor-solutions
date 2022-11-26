@@ -163,6 +163,7 @@ footer {
     background-color: var(--color-light-grayish-blue);
     border: none;
     outline: none;
+    font-size: 0;
 }
 
 .share-arrow-onclick {
