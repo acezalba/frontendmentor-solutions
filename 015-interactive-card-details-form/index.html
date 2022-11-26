@@ -7,17 +7,16 @@
 
 	<!-- SEO Metas -->
 	<meta name="robots" content="index, follow">
-	<meta name="author" content="Ace Z. Alba" />
-	<meta name="copyright" content="FrontendMentor.io" />
-	<meta name="description" content="A submission to a FrontendMentor challenge" />
-	<meta name="keywords" content="frontendmentor,challenge,css,html"/>
+	<meta name="author" content="Ace Z. Alba">
+	<meta name="copyright" content="FrontendMentor.io">
+	<meta name="description" content="A submission to a FrontendMentor challenge">
+	<meta name="keywords" content="frontendmentor,challenge,js,css,html">
 
 	<title>Frontend Mentor | Interactive Card Details Form</title>
 	<link rel="shortcut icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
 
-<!-- 	<link rel="stylesheet" href="https://unpkg.com/sanitize.css" /> -->
-    <link rel="stylesheet" href="./assets/css/sanitize.css" /> 
-	<link rel="stylesheet" href="./assets/css/style.css" /> 
+    <link rel="stylesheet" href="./assets/css/sanitize.css"> 
+	<link rel="stylesheet" href="./assets/css/style.css"> 
 
     <script src="assets/js/main.js" type="module"></script>
 
@@ -69,10 +68,10 @@
                         required >
                     <div class="card-number invalid">Can't be blank.</div>
                     
-                    <label for="card-exp-date">Exp. Date (MM/YY)</label>
+                    <label class="card-exp-date">Exp. Date (MM/YY)</label>
                     <label for="exp-m" class="screenreader">Month</label>
                     <input 
-                        type="month" 
+                        type="text" 
                         placeholder="MM" 
                         id="exp-m"
                         maxlength="2"
@@ -81,7 +80,7 @@
                     <div class="exp-m invalid">Can't be blank.</div>
                     <label for="exp-y" class="screenreader">Year</label>
                     <input 
-                        type="year" 
+                        type="text" 
                         placeholder="YY" 
                         id="exp-y"
                         maxlength="2"
